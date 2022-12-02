@@ -76,7 +76,7 @@ def test_divide_groups():
             print(f"Group {i}: Test 2 failed")
         i += 1
 
-def test_validate_name():
+def test_validate_names():
     test_case = ["M4rtin,App0,20", "Martin,Appo,120", "Appo,Martin,30"]
     regex = r"^[a-zA-z ÕõÄäÖöÜü]*$"
     for item in test_case:
@@ -109,5 +109,5 @@ def test_input_format():
             print("Test 4 failed")
 
 test_divide_groups()
-test_validate_name()
+test_validate_names()
 test_input_format()
